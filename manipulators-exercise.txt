@@ -1,0 +1,30 @@
+Exercise
+--------
+
+* Write a manipulator with the name "abcitem", with which list items can be
+  enumerated with small letters.
+  e.g.
+    cout << abcitem << ". element" << endl;
+  
+* Write an effector with the name "backwards", which gets a string parameter
+  and writes it backwards to the stream.
+  e.g. 
+    cout << backwards("something") << endl;  // -> gnihtemos
+
+* Write two manipulators - with the names "backwardsBegin" and "backwardsEnd" -
+  so that all strings between these two in the stream will be written backwards
+  to the stream.
+  e.g. 
+    cout << backwardsBegin << "something" << backwardsEnd <<endl;  // -> gnihtemos
+
+* Write an effector with the name "matrix", which gets an arbitrary sized
+  two-dimensional array and writes it formatted as a table to the stream.
+  e.g.
+    const int N=3;
+    const int M=4;
+    int m[N][M] = {
+      1, 2, 3, 4,
+      5, 6, 7, 8,
+      9,10,11,12
+    };
+    cout << matrix<N,M>(m) << endl;
